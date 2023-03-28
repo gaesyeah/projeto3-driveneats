@@ -62,13 +62,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: 172px; 
     background-color: #FFFFFF;
     border-radius: 22px;
-    margin-right: 13px;
     box-shadow: 0 0 4px #b6b6b6;
-    margin-left: 4px;
+}
+.food_select_auto { 
+    /*adicionei essa para poder botar height auto na div food_select
+    e o tamanho da div alterar com base no conteudo, 
+    MAS SEM O AUTO SER AFETADO PELA PÁGINA E/OU QUANTIDADE DE DIVS*/
+    height: 100%;
+    width: 172px; 
+    margin-right: 13px;
     margin-top: 4px;
     margin-bottom: 4px;
 }
