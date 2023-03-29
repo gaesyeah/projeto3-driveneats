@@ -26,13 +26,11 @@ body {
 .menu_full {
     background-color: #E5E5E5;;
     width: 755px;
-    height: 100%;
     margin-left: 17px;
 }
 .menu_selectPLUStext {
     background-color: #E5E5E5;
     width: 755px;
-    height: 100%;
     margin-top: 17px;
 }
 .menu_select {
@@ -40,7 +38,6 @@ body {
     display: flex;
     background-color: #E5E5E5;
     width: 755px;
-    height: 100%;
     margin-left: -4px;
 }
 .menu_select::-webkit-scrollbar {
@@ -62,18 +59,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
     width: 172px; 
     background-color: #FFFFFF;
     border-radius: 22px;
     box-shadow: 0 0 4px #b6b6b6;
-}
-.food_select_auto { 
-    /*adicionei essa para poder botar height auto na div food_select
-    e o tamanho da div alterar com base no conteudo, 
-    MAS SEM O AUTO SER AFETADO PELA PÁGINA E/OU QUANTIDADE DE DIVS*/
-    height: 100%;
-    width: 172px; 
     margin-right: 13px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -121,11 +110,13 @@ body {
 }
 /*--------------------------------------------------------*/
 .top_bar {
+    top: 0;
     margin-bottom: 27px;
     width: 100%;
     height: 92px;
 }
 .top_bar_fixed {
+    top: 0;
     width: 100%;
     height: 92px;
     position: fixed;
@@ -156,11 +147,13 @@ body {
 }
 /*--------------------------------------------------------*/
 .bottom_bar {
+    bottom: 0;
     margin-top: 17px;
     width: 100%;
     height: 92px;
 }
 .bottom_bar_fixed {
+    bottom: 0;
     width: 100%;
     height: 92px;
     position: fixed;
@@ -169,7 +162,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    bottom: 0;
 }
 .button {
     border-radius: 22px;
