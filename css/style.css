@@ -3,7 +3,14 @@
 }
 body {
     background-color: #E5E5E5;
+}
+.full_page {
     position: relative;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /*--------------------------------------------------------*/
 .confirm_screen {
@@ -25,21 +32,20 @@ body {
 /*--------------------------------------------------------*/
 .menu_full {
     background-color: #E5E5E5;;
-    width: 755px;
-    height: 875px;
+    width: 100%;
     margin-left: 17px;
-    margin-bottom: 132px;
+    margin-bottom: 105px;
 }
 .menu_selectPLUStext {
     background-color: #E5E5E5;
-    width: 755px;
+    width: 100%;
     margin-top: 17px;
 }
 .menu_select {
     overflow: scroll;
     display: flex;
     background-color: #E5E5E5;
-    width: 755px;
+    width: 100%;
     margin-left: -4px;
 }
 .menu_select::-webkit-scrollbar {
@@ -65,10 +71,10 @@ body {
     background-color: #FFFFFF;
     border-radius: 22px;
     box-shadow: 0 0 4px #b6b6b6;
-    margin-right: 13px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 4px;
+    margin: 4px; /*para que a sombra não seja cortada*/
+}
+.adjust { /*só de estar em volta da food_select já faz com que ela fique no lugar certo, mas também serve para afasta-la das outras*/
+    margin-right: 9px;
 }
 .img {
     border-radius: 4px;
@@ -112,13 +118,10 @@ body {
 }
 /*--------------------------------------------------------*/
 .top_bar {
-    top: 0;
-    margin-bottom: 27px;
     width: 100%;
     height: 92px;
 }
 .top_bar_fixed {
-    top: 0;
     width: 100%;
     height: 92px;
     position: fixed;
