@@ -25,22 +25,22 @@ body {
 /*--------------------------------------------------------*/
 .menu_full {
     background-color: #E5E5E5;;
-    width: 100%;
+    width: 755px;
     height: 100%;
     margin-left: 17px;
 }
 .menu_selectPLUStext {
     background-color: #E5E5E5;
+    width: 755px;
     height: 100%;
-    width: 100%;
     margin-top: 17px;
 }
 .menu_select {
     overflow: scroll;
     display: flex;
     background-color: #E5E5E5;
+    width: 755px;
     height: 100%;
-    width: 100%;
     margin-left: -4px;
 }
 .menu_select::-webkit-scrollbar {
@@ -80,6 +80,8 @@ body {
     margin-left: 4px;
 }
 .img {
+    border-radius: 4px;
+    height: auto;
     width: 144px;
     margin-top: 18px;
     margin-bottom: 8px;
@@ -184,5 +186,10 @@ body {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+.hidden {
+    display: none;
+    background-color: #32B72F;
     color: #FFFFFF;
 }
