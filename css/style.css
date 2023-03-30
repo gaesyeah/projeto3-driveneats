@@ -15,7 +15,7 @@ body {
 }
 /*--------------------------------------------------------*/
 .confirm_screen {
-    display: flex;
+    display: none;
     position: absolute;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.850);
@@ -196,8 +196,8 @@ body {
     color: #333333;
 }
 .desc {
-    margin-top: 4px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 6px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
