@@ -276,13 +276,11 @@ body {
     color: #FFFFFF;
     position: absolute; /*para os 2 botões ficarem um sob o outro*/
 }
+.green {
+    background-color: #32B72F;
+}
 .sizer {
     width: 220px;
-}
-.hidden {
-    display: none;
-    background-color: #32B72F;
-    color: #FFFFFF;
 }
 .true_button {
     border-radius: 22px;
