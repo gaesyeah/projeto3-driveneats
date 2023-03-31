@@ -47,9 +47,9 @@
         <div class="menu_full">
             <div class="menu_selectPLUStext">
                 <p class="select_text">Primeiro, seu prato</p>
-                <div class="menu_select">
+                <div class="food menu_select">
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedFOOD('.JSfood_1')" class="JSfood_1 food_select">
                             <img class="img"src="./images/4679-arroz-batatas-e-salada-de-palmito-sao-a-article_content_img-2.jpg"/>
                             <div class="text_box">
                                 <p class="name">Filé de salmão</p>
@@ -59,7 +59,7 @@
                         </div>
                     </div>    
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedFOOD('.JSfood_2')" class="JSfood_2 food_select">
                             <img class="img"src="./images/receitas-de-pizza-de-camarao-0.webp"/>
                             <div class="text_box">
                                 <p class="name">Pizza de camarão</p>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedFOOD('.JSfood_3')" class="JSfood_3 food_select">
                             <img class="img"src="./images/frango_yin_yang.png"/>
                             <div class="text_box">
                                 <p class="name">Frango diferenciado</p>
@@ -82,9 +82,9 @@
             </div>
             <div class="menu_selectPLUStext">
                 <p class="select_text">Agora, sua bebida</p>
-                <div class="menu_select">
+                <div class="drink menu_select">
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDRINK('.JSdrink_1') "class="JSdrink_1 food_select">
                             <img class="img"src="./images/coca-cola.png"/>
                             <div class="text_box">
                                 <p class="name">Coquinha gelada</p>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDRINK('.JSdrink_2') "class="JSdrink_2 food_select">
                             <img class="img"src="./images/caipirosca.jpg"/>
                             <div class="text_box">
                                 <p class="name">Caipirosca de morango</p>
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDRINK('.JSdrink_3') "class="JSdrink_3 food_select">
                             <img class="img"src="./images/kiwi_juice.jpeg"/>
                             <div class="text_box">
                                 <p class="name">Suco de kiwi</p>
@@ -117,9 +117,9 @@
             </div>
             <div class="menu_selectPLUStext">
                 <p class="select_text">Por fim, sua sobremesa</p>
-                <div class="menu_select">
+                <div class="dessert menu_select">
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_1')" class="JSdessert_1 food_select">
                             <img class="img"src="./images/pudim.png"/>
                             <div class="text_box">
                                 <p class="name">Pudim</p>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_2')" class="JSdessert_2 food_select">
                             <img class="img"src="./images/bolo-pacoca-caneca-catraca.webp"/>
                             <div class="text_box">
                                 <p class="name">Bolo de paçoca na caneca</p>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_3')" class="JSdessert_3 food_select">
                             <img class="img"src="./images/bolo-de-cenoura-receitas-destaque-960x625.jpg"/>
                             <div class="text_box">
                                 <p class="name">Bolo de cenoura com chocolate</p>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="adjust">
-                        <div class="food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_4')" class="JSdessert_4 food_select">
                             <img class="img"src="./images/receita-de-bolo-de-chocolate-com-cafe.jpg"/>
                             <div class="text_box">
                                 <p class="name">Fatia de bolo de café com chocolate</p>
@@ -165,9 +165,10 @@
         <div class="bottom_bar_fixed">
             <button disabled class="true_button">
                 <div class="button">
-                    <p>selecione os 3 itens</p>
-                    <p>para fechar o pedido</p>
-                </div>
+                    <div class="sizer">
+                        <p>selecione os 3 itens para fechar o pedido</p>
+                    </div>
+                </div>                                  <!--ALTERAR PARA SER SÓ UM BOTÃO, E QUE TROCA COR E TEXTO-->
                 <div class="button hidden">
                     <p>Fechar pedido!</p>
                 </div>
