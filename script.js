@@ -118,6 +118,7 @@ const buttonedCONFIRM = document.querySelector('.true_button1');
 buttonedCONFIRM.addEventListener('click', buttonedCONFIRMFUNC);
 
 function buttonedCONFIRMFUNC () {
+    
     const hide = document.querySelector('.confirm_screen');
     hide.classList.toggle('hide_screen');
     nome = prompt('Qual o seu nome?');
@@ -134,7 +135,41 @@ function buttonedCONFIRMFUNC () {
     }
 
     /*ENVIA PARA O ZAP:*/
+    let zap_text = `Olá, gostaria de fazer o pedido:\n- Prato: ${encodeURIComponent(_FDname)}\n- Bebida: ${encodeURIComponent(_DKname)}\n- Sobremesa : ${encodeURIComponent(_DTname)}\nTotal: ${encodeURIComponent(reais)}\n\nNome: ${encodeURIComponent(nome)}\nEndereço: ${encodeURIComponent(endereco)}`;
+    console.log(zap_text);
 
+    /*REMOVE AS CAIXAS MARCADAS PARA SER FEITO UM NOVO PEDIDO*/
+    const desmarcaFD = document.querySelector('.food .selected');
+    desmarcaFD.classList.remove('selected');
+    _FDname = '';
+    _FDnoR$price = '';
+    _FDprice = 0;
+    const desmarcaFDcheck = document.querySelector('.food .check_selected')
+    desmarcaFDcheck.classList.remove('check_selected')
+
+    const desmarcaDK = document.querySelector('.drink .selected');
+    desmarcaDK.classList.remove('selected');
+    _DKname = '';
+    _DKnoR$price = '';
+    _DKprice = 0;
+    const desmarcaDKcheck = document.querySelector('.drink .check_selected')
+    desmarcaDKcheck.classList.remove('check_selected')
+
+    const desmarcaDT = document.querySelector('.dessert .selected');
+    desmarcaDT.classList.remove('selected');
+    _DTname = '';
+    _DTnoR$price = '';
+    _DTprice = 0;
+    const desmarcaDTcheck = document.querySelector('.dessert .check_selected')
+    desmarcaDTcheck.classList.remove('check_selected')
+
+    if (_FDname == '' || _DKname == '' || _DTname == '') {
+        const q = document.querySelector('.button');
+        q.classList.remove('BTgreen');
+        q.innerHTML = "Confirme seu pedido";
+        document.querySelector('.true_button').disabled = true;
+        q.classList.remove('hover');   
+    }    
 }
 
 //------------------------------------------------------------
@@ -179,7 +214,7 @@ function clickedDRINK(JS,JSC) {
 }
 
 
-function clickedDESSERT(JS,JSC) { 
+function clickedDESSERT(JS, JSC) { 
 
     const x = document.querySelector('.dessert .selected');
     if (x !== null) {
