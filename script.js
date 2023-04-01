@@ -86,6 +86,9 @@ function buttonedFUNC() {
     const DEShide = document.querySelector('.confirm_screen');
     DEShide.classList.toggle('hide_screen');
 
+    nome = prompt('Qual o seu nome?');
+    endereco = prompt('Qual o seu endereço?');
+
     /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
     contador = contador  + 1;
     const resto = contador % 2;
@@ -122,8 +125,6 @@ function buttonedCONFIRMFUNC () {
     
     const hide = document.querySelector('.confirm_screen');
     hide.classList.toggle('hide_screen');
-    nome = prompt('Qual o seu nome?');
-    endereco = prompt('Qual o seu endereço?');
     
     /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
     contador = contador  + 1;
