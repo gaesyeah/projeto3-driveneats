@@ -17,7 +17,7 @@
     <div class="full_page">
     <!-------------------------------------------------------------->
         <div class="confirm_screen hide_screen">
-            <div class="confirm">
+            <div class="confirm" data-test="confirm-order">
                 <p class="text_confirm">Confirme seu pedido</p>
                 <div class="list_confirm">
                     <div class="total less">
@@ -37,12 +37,12 @@
                         <p class="total_price"></p>
                     </div>
                 </div>
-                <button class="true_button1">
+                <button class="true_button1" data-test="confirm-order-btn">
                     <div class="button1 hover1">
                         <p>Tudo certo, pode pedir!</p>
                     </div>
                 </button>
-                <button class="true_button2">
+                <button class="true_button2" data-test="cancel-order-btn">
                     <div class="button2 hover2">
                         <p>Cancelar</p>
                     </div>
@@ -62,45 +62,45 @@
                 <p class="select_text">Primeiro, seu prato</p>
                 <div class="food menu_select">
                     <div class="adjust">
-                        <div onclick="clickedFOOD('.JSfood_1','.JSFDcheck_1')" class="JSfood_1 food_select">
+                        <div onclick="clickedFOOD('.JSfood_1','.JSFDcheck_1')" class="JSfood_1 food_select" data-test="dish">
                             <div class ="scroll">
                                 <img class="img"src="./images/4679-arroz-batatas-e-salada-de-palmito-sao-a-article_content_img-2.jpg"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Filé de salmão</p>
+                                <p class="name" data-test="item-name">Filé de salmão</p>
                                 <p class="desc">Vem com um tanto acompanhamento chique aí</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 37,90</p>
+                                    <p class="price" data-test="item-price">R$ 37,90</p>
                                     <ion-icon class="JSFDcheck_1 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>    
                     <div class="adjust">
-                        <div onclick="clickedFOOD('.JSfood_2','.JSFDcheck_2')" class="JSfood_2 food_select">
+                        <div onclick="clickedFOOD('.JSfood_2','.JSFDcheck_2')" class="JSfood_2 food_select" data-test="dish">
                             <div class ="scroll">
                                 <img class="img"src="./images/receitas-de-pizza-de-camarao-0.webp"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Pizza de camarão</p>
+                                <p class="name" data-test="item-name">Pizza de camarão</p>
                                 <p class="desc">3 fatias grandes com MUITO camarão</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 20,00</p>
+                                    <p class="price" data-test="item-price">R$ 20,00</p>
                                     <ion-icon class="JSFDcheck_2 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="adjust">
-                        <div onclick="clickedFOOD('.JSfood_3','.JSFDcheck_3')" class="JSfood_3 food_select">
+                        <div onclick="clickedFOOD('.JSfood_3','.JSFDcheck_3')" class="JSfood_3 food_select" data-test="dish">
                             <div class ="scroll">
                                 <img class="img"src="./images/frango_yin_yang.png"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Frango diferenciado</p>
+                                <p class="name" data-test="item-name">Frango diferenciado</p>
                                 <p class="desc">Um pouco de batata, um pouco de salada</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 14,90</p>
+                                    <p class="price" data-test="item-price">R$ 14,90</p>
                                     <ion-icon class="JSFDcheck_3 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
@@ -112,45 +112,45 @@
                 <p class="select_text">Agora, sua bebida</p>
                 <div class="drink menu_select">
                     <div class="adjust">
-                        <div onclick="clickedDRINK('.JSdrink_1','.JSDKcheck_1') "class="JSdrink_1 food_select">
+                        <div onclick="clickedDRINK('.JSdrink_1','.JSDKcheck_1') "class="JSdrink_1 food_select" data-test="drink">
                             <div class ="scroll">
                                 <img class="img"src="./images/coca-cola.png"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Coquinha gelada</p>
+                                <p class="name" data-test="item-name">Coquinha gelada</p>
                                 <p class="desc">Lata 350ml</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 4,90</p>
+                                    <p class="price" data-test="item-price">R$ 4,90</p>
                                     <ion-icon class="JSDKcheck_1 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="adjust">
-                        <div onclick="clickedDRINK('.JSdrink_2','.JSDKcheck_2') "class="JSdrink_2 food_select">
+                        <div onclick="clickedDRINK('.JSdrink_2','.JSDKcheck_2') "class="JSdrink_2 food_select" data-test="drink">
                             <div class ="scroll">
                                 <img class="img"src="./images/caipirosca.jpg"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Caipirosca de morango</p>
+                                <p class="name" data-test="item-name">Caipirosca de morango</p>
                                 <p class="desc">Para maiores de 18 hein...</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 9,90</p>
+                                    <p class="price" data-test="item-price">R$ 9,90</p>
                                     <ion-icon class="JSDKcheck_2 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="adjust">
-                        <div onclick="clickedDRINK('.JSdrink_3','.JSDKcheck_3') "class="JSdrink_3 food_select">
+                        <div onclick="clickedDRINK('.JSdrink_3','.JSDKcheck_3') "class="JSdrink_3 food_select" data-test="drink">
                             <div class ="scroll">
                                 <img class="img"src="./images/kiwi_juice.jpeg"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Suco de kiwi</p>
+                                <p class="name" data-test="item-name">Suco de kiwi</p>
                                 <p class="desc">Copo 400ml</p>
                                 <div class="priceBOX">
-                                    <p class="price">R$ 6,00</p>
+                                    <p class="price" data-test="item-price">R$ 6,00</p>
                                     <ion-icon class="JSDKcheck_3 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
@@ -162,45 +162,45 @@
                 <p class="select_text">Por fim, sua sobremesa</p>
                 <div class="dessert menu_select">
                     <div class="adjust">
-                        <div onclick="clickedDESSERT('.JSdessert_1','.JSDTcheck_1')" class="JSdessert_1 food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_1','.JSDTcheck_1')" class="JSdessert_1 food_select" data-test="dessert">
                             <div class ="scroll">
                                 <img class="img"src="./images/pudim.png"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Pudim</p>
+                                <p class="name" data-test="item-name">Pudim</p>
                                 <p class="desc">É um pudim. Muito gostoso inclusive</p>
                                 <div class = "priceBOX">
-                                    <p class="price">R$ 7,90</p>
+                                    <p class="price" data-test="item-price">R$ 7,90</p>
                                     <ion-icon class="JSDTcheck_1 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="adjust">
-                        <div onclick="clickedDESSERT('.JSdessert_2','.JSDTcheck_2')" class="JSdessert_2 food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_2','.JSDTcheck_2')" class="JSdessert_2 food_select" data-test="dessert"> 
                             <div class ="scroll">
                                 <img class="img"src="./images/bolo-pacoca-caneca-catraca.webp"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Bolo de paçoca na caneca</p>
+                                <p class="name" data-test="item-name">Bolo de paçoca na caneca</p>
                                 <p class="desc">É pra devolver a caneca hein kkkkk</p>
                                 <div class = "priceBOX">
-                                    <p class="price">R$ 9,90</p>
+                                    <p class="price" data-test="item-price">R$ 9,90</p>
                                     <ion-icon class="JSDTcheck_2 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="adjust">
-                        <div onclick="clickedDESSERT('.JSdessert_3','.JSDTcheck_3')" class="JSdessert_3 food_select">
+                        <div onclick="clickedDESSERT('.JSdessert_3','.JSDTcheck_3')" class="JSdessert_3 food_select" data-test="dessert">
                             <div class ="scroll">
                                 <img class="img"src="./images/bolo-de-cenoura-receitas-destaque-960x625.jpg"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Bolo de cenoura com chocolate</p>
+                                <p class="name" data-test="item-name">Bolo de cenoura com chocolate</p>
                                 <p class="desc">MUITO chocolate, mas só uma fatia</p>
                                 <div class = "priceBOX">
-                                    <p class="price">R$ 11,50</p>
+                                    <p class="price" data-test="item-price">R$ 11,50</p>
                                     <ion-icon class="JSDTcheck_3 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div> 
                             </div>
@@ -212,10 +212,10 @@
                                 <img class="img"src="./images/receita-de-bolo-de-chocolate-com-cafe.jpg"/>
                             </div>
                             <div class="text_box">
-                                <p class="name">Fatia de bolo de café com chocolate</p>
+                                <p class="name" data-test="item-name">Fatia de bolo de café com chocolate</p>
                                 <p class="desc">Ainda vem com umas frutinhas vermelhas de bônus</p>
                                 <div class = "priceBOX">
-                                    <p class="price">R$ 13,00</p>
+                                    <p class="price" data-test="item-price">R$ 13,00</p>
                                     <ion-icon class="JSDTcheck_4 check" name="checkmark-circle-sharp"></ion-icon>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
         </div>
     <!----------------------------------------------------------------------------------------->
         <div class="bottom_bar_fixed">
-            <button disabled class="true_button">
+            <button disabled class="true_button" data-test="order-btn">
                 <div class="button">
                     <div class="sizer">
                         <p>selecione os 3 itens para fechar o pedido</p>
