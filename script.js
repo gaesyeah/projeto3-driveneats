@@ -48,13 +48,22 @@ function ENABLE() {
                 console.log(reais);
 
                 //----------------------------------------------
-
+                /*adiciona os nomes e preços na "confirm screen"*/
                 const FDname = document.querySelector('.FDname');
                 FDname.innerHTML = _FDname;
                 const FDprice = document.querySelector('.FDprice');
                 FDprice.innerHTML = _FDnoR$price;
-
                 //--------
+                const DKname = document.querySelector('.DKname');
+                DKname.innerHTML = _DKname;
+                const DKprice = document.querySelector('.DKprice');
+                DKprice.innerHTML = _DKnoR$price;
+                //--------
+                const DTname = document.querySelector('.DTname');
+                DTname.innerHTML = _DTname;
+                const DTprice = document.querySelector('.DTprice');
+                DTprice.innerHTML = _DTnoR$price;
+
                 const _FD_DK_DTname = document.querySelector('.total_price');
                 _FD_DK_DTname.innerHTML = reais;
             }
@@ -68,8 +77,11 @@ buttoned.addEventListener('click', buttonedFUNC);
 function buttonedFUNC() {
     const DEShide = document.querySelector('.confirm_screen');
     DEShide.classList.toggle('hide_screen');
-    
-    /*if (DEShide !== '.hide_screen') {
+
+    /*
+TENTATIVA DE DESATIVAR O BOTÃO QUANDO A CONFIRM SCREEN ESTA ATIVA
+
+    if (DEShide !== '.hide_screen') {
         document.querySelector('.true_button').disabled = true;
     } else {
         document.querySelector('.true_button').disabled = false;
