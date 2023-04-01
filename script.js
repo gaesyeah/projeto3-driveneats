@@ -12,6 +12,11 @@ let _DTprice = 0;
 
 let _FD_DK_DT = 0;
 let reais = '';
+
+let nome = '';
+let endereco = '';
+//-------------------
+let contador = 2;
 //------------------------------------------------------------
 function ENABLE() {
     if (_FDname !== '') {
@@ -19,8 +24,10 @@ function ENABLE() {
             if (_DTname !== '') {
                 const x = document.querySelector('.button');
                 x.classList.add('BTgreen');
-                x.innerHTML = "Fechar Pedido!"
+                x.innerHTML = "Fechar Pedido!";
                 document.querySelector('.true_button').disabled = false;
+                x.classList.add('hover');
+                
                 
                 _FDprice = document.querySelector('.food .selected .price').innerText;
                 _FDnoR$price = _FDprice.substr(3);
@@ -78,14 +85,15 @@ function buttonedFUNC() {
     const DEShide = document.querySelector('.confirm_screen');
     DEShide.classList.toggle('hide_screen');
 
-    /*
-TENTATIVA DE DESATIVAR O BOTÃO QUANDO A CONFIRM SCREEN ESTA ATIVA
-
-    if (DEShide !== '.hide_screen') {
-        document.querySelector('.true_button').disabled = true;
-    } else {
-        document.querySelector('.true_button').disabled = false;
-    }*/
+    /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
+    contador = contador  + 1;
+    const resto = contador % 2;
+    if(resto === 1){
+        const x = document.querySelector('.bottom_bar_fixed');
+        x.classList.toggle('hide_screen');
+        const y = document.querySelector('.full_page');
+        y.classList.toggle('NObar_full_page');
+    }
 }
 //--------
 const buttonedEXIT = document.querySelector('.true_button2');
@@ -94,6 +102,39 @@ buttonedEXIT.addEventListener('click' ,buttonedEXITFUNC);
 function buttonedEXITFUNC () {
     const hide = document.querySelector('.confirm_screen');
     hide.classList.toggle('hide_screen');
+
+    /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
+    contador = contador  + 1;
+    const resto = contador % 2;
+    if(resto !== 1){
+        const x = document.querySelector('.bottom_bar_fixed');
+        x.classList.toggle('hide_screen');
+        const y = document.querySelector('.full_page');
+        y.classList.toggle('NObar_full_page');
+    }
+}
+
+const buttonedCONFIRM = document.querySelector('.true_button1');
+buttonedCONFIRM.addEventListener('click', buttonedCONFIRMFUNC);
+
+function buttonedCONFIRMFUNC () {
+    const hide = document.querySelector('.confirm_screen');
+    hide.classList.toggle('hide_screen');
+    nome = prompt('Qual o seu nome?');
+    endereco = prompt('Qual o seu endereço?');
+
+    /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
+    contador = contador  + 1;
+    const resto = contador % 2;
+    if(resto !== 1){
+        const x = document.querySelector('.bottom_bar_fixed');
+        x.classList.toggle('hide_screen');
+        const y = document.querySelector('.full_page');
+        y.classList.toggle('NObar_full_page');
+    }
+
+    /*ENVIA PARA O ZAP:*/
+
 }
 
 //------------------------------------------------------------
