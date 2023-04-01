@@ -15,7 +15,7 @@ body {
 }
 /*--------------------------------------------------------*/
 .confirm_screen {
-    display: none;
+    display: flex;
     position: absolute;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.850);
@@ -37,7 +37,8 @@ body {
 }
 @media (min-width: 935px) {
     .confirm { 
-        margin-top: 22%;
+        width: 20%;
+        margin-top: 16%;
     }
 }
 .list_confirm {
@@ -51,11 +52,17 @@ body {
     line-height: 26px;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .total {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+}
+.less {
+    font-weight: 400;
 }
 .text_confirm {
     margin-top: 21px;
@@ -173,7 +180,6 @@ body {
     margin-left: 17px;
 }
 .img {
-    object-fit: cover;
     border-radius: 4px;
     height: auto;
     width: 144px;
@@ -284,10 +290,7 @@ body {
     color: #FFFFFF;
     position: absolute; /*para os 2 botões ficarem um sob o outro*/
 }
-.green {
-    background-color: #32B72F;
-}
-.sizer {
+.sizer { /*para que o texto quebre linha*/
     width: 220px;
 }
 .true_button {
@@ -312,3 +315,12 @@ body {
 .check_selected {
     color: #32B72F;
 }
+
+.BTgreen {
+    background-color: #32B72F;
+}
+
+.hide_screen {
+    display: none;
+}
+
