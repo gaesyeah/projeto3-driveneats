@@ -15,6 +15,7 @@ let reais = '';
 
 let nome = '';
 let endereco = '';
+let numero = '';
 //-------------------
 let contador = 2;
 //------------------------------------------------------------
@@ -123,7 +124,7 @@ function buttonedCONFIRMFUNC () {
     hide.classList.toggle('hide_screen');
     nome = prompt('Qual o seu nome?');
     endereco = prompt('Qual o seu endereço?');
-
+    
     /*fiz um contador para esconder o botão quando a confirm screen está ativa*/
     contador = contador  + 1;
     const resto = contador % 2;
@@ -133,11 +134,12 @@ function buttonedCONFIRMFUNC () {
         const y = document.querySelector('.full_page');
         y.classList.toggle('NObar_full_page');
     }
-
-    /*ENVIA PARA O ZAP:*/
-    let zap_text = `Olá, gostaria de fazer o pedido:\n- Prato: ${encodeURIComponent(_FDname)}\n- Bebida: ${encodeURIComponent(_DKname)}\n- Sobremesa : ${encodeURIComponent(_DTname)}\nTotal: ${encodeURIComponent(reais)}\n\nNome: ${encodeURIComponent(nome)}\nEndereço: ${encodeURIComponent(endereco)}`;
+    
+    let zap_text = "https://wa.me/77981343070?text=" + encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${_FDname}\n- Bebida: ${_DKname}\n- Sobremesa : ${_DTname}\nTotal: ${reais}\n\nNome: ${nome}\nEndereço: ${endereco}`);
     console.log(zap_text);
 
+    window.open(zap_text);
+    /*-------------------------------------------------------*/
     /*REMOVE AS CAIXAS MARCADAS PARA SER FEITO UM NOVO PEDIDO*/
     const desmarcaFD = document.querySelector('.food .selected');
     desmarcaFD.classList.remove('selected');
@@ -169,7 +171,7 @@ function buttonedCONFIRMFUNC () {
         q.innerHTML = "Confirme seu pedido";
         document.querySelector('.true_button').disabled = true;
         q.classList.remove('hover');   
-    }    
+    }
 }
 
 //------------------------------------------------------------
