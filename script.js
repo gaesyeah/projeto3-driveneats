@@ -51,8 +51,8 @@ function ENABLE() {
                 _FD_DK_DT = (Number(_FDprice) + Number(_DKprice) + Number(_DTprice)).toFixed(1);
                 _FD_DK_DT = Number(_FD_DK_DT);
                 console.log(_FD_DK_DT);
-                reais = String(_FD_DK_DT);
-                reais = "R$ " + reais.replace('.', ',') + "0";
+                reais = String((_FD_DK_DT).toFixed(2));
+                reais = "R$ " + reais.replace('.', ',');
                 console.log(reais);
 
                 //----------------------------------------------
