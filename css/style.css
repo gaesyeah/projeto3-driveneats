@@ -245,7 +245,7 @@ body {
     justify-content: space-between;
 }
 .check {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0);
 }
 /*--------------------------------------------------------*/
 .top_bar {
