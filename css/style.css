@@ -211,7 +211,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 147px;
-    height: auto;
+    height: 122px;
     margin-bottom: 18px;
 }
 .name {
