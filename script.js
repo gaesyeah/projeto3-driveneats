@@ -25,7 +25,7 @@ function ENABLE() {
             if (_DTname !== '') {
                 const x = document.querySelector('.button');
                 x.classList.add('BTgreen');
-                x.innerHTML = "Fechar Pedido!";
+                x.innerHTML = "Fechar Pedido";
                 document.querySelector('.true_button').disabled = false;
                 x.classList.add('hover');
                 
