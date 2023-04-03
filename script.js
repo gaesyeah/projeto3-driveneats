@@ -166,7 +166,7 @@ function buttonedCONFIRMFUNC () {
     const desmarcaDTcheck = document.querySelector('.dessert .check_selected')
     desmarcaDTcheck.classList.remove('check_selected')
 
-    if (_FDname == '' || _DKname == '' || _DTname == '') {
+    if (_FDname === '' || _DKname === '' || _DTname === '') {
         const q = document.querySelector('.button');
         q.classList.remove('BTgreen');
         q.innerHTML = "Confirme seu pedido";
